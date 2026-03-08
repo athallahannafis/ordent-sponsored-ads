@@ -54,34 +54,8 @@ const features = [
           Sponsored Ads
         </a>
       </div>
-      <div class="mt-16 w-full max-w-4xl overflow-hidden rounded-2xl shadow-2xl ring-1 ring-gray-200">
-        <div class="flex items-center gap-2 bg-gray-100 px-4 py-3">
-          <span class="h-3 w-3 rounded-full bg-red-400"></span>
-          <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
-          <span class="h-3 w-3 rounded-full bg-green-400"></span>
-        </div>
-        <div class="grid grid-cols-3 gap-4 bg-white p-8">
-          <div class="col-span-2 space-y-3">
-            <div class="h-4 rounded bg-indigo-100"></div>
-            <div class="h-4 w-4/5 rounded bg-gray-100"></div>
-            <div class="h-4 w-3/5 rounded bg-gray-100"></div>
-            <div class="mt-6 h-32 rounded-xl bg-indigo-50 flex items-center justify-center text-4xl">📊</div>
-          </div>
-          <div class="space-y-3">
-            <div class="rounded-xl bg-indigo-600 p-4 text-white text-center">
-              <p class="text-2xl font-bold">+142%</p>
-              <p class="text-xs opacity-80">Conversion Rate</p>
-            </div>
-            <div class="rounded-xl bg-purple-100 p-4 text-center">
-              <p class="text-2xl font-bold text-purple-700">3.8x</p>
-              <p class="text-xs text-purple-500">Return on Ad Spend</p>
-            </div>
-            <div class="rounded-xl bg-green-100 p-4 text-center">
-              <p class="text-2xl font-bold text-green-700">98%</p>
-              <p class="text-xs text-green-500">Uptime SLA</p>
-            </div>
-          </div>
-        </div>
+      <div class="mt-16 w-full max-w-4xl overflow-hidden rounded-2xl shadow-2xl  ring-gray-200">
+        
       </div>
     </section>
   </main>
