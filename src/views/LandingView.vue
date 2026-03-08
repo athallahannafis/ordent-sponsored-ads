@@ -42,16 +42,16 @@ const features = [
       <div class="mt-10 flex flex-wrap justify-center gap-4">
         <a
           id="get-started"
-          href="#"
+          href="/articles"
           class="rounded-full bg-indigo-600 px-8 py-3 text-base font-semibold text-white shadow-lg hover:bg-indigo-700 hover:scale-110 transition-all duration-100"
         >
-          Start Advertising
+          Articles
         </a>
         <a
-          href="#how-it-works"
+          href="/sponsored-ads"
           class="rounded-full border border-gray-300 bg-white px-8 py-3 text-base font-semibold text-gray-700 hover:bg-gray-50 hover:scale-110 transition-all duration-100"
         >
-          Learn More
+          Sponsored Ads
         </a>
       </div>
       <div class="mt-16 w-full max-w-4xl overflow-hidden rounded-2xl shadow-2xl ring-1 ring-gray-200">
@@ -84,64 +84,5 @@ const features = [
         </div>
       </div>
     </section>
-
-    <!-- Features -->
-    <section id="features" class="bg-white py-24 px-6">
-      <div class="mx-auto max-w-6xl">
-        <div class="text-center">
-          <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">Everything You Need to Win</h2>
-          <p class="mt-4 text-gray-500">Built for sellers who want results, not complexity.</p>
-        </div>
-        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <div
-            v-for="feature in features"
-            :key="feature.title"
-            class="rounded-2xl border border-gray-100 bg-gray-50 p-6 hover:shadow-md transition-shadow"
-          >
-            <div class="mb-4 text-4xl">{{ feature.icon }}</div>
-            <h3 class="mb-2 text-lg font-semibold text-gray-900">{{ feature.title }}</h3>
-            <p class="text-sm text-gray-500">{{ feature.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works -->
-    <section id="how-it-works" class="bg-indigo-50 py-24 px-6">
-      <div class="mx-auto max-w-4xl text-center">
-        <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">How It Works</h2>
-        <p class="mt-4 text-gray-500">Launch your first campaign in minutes.</p>
-        <div class="mt-16 grid gap-8 md:grid-cols-3">
-          <div v-for="(step, i) in ['Create a Campaign', 'Set Your Budget', 'Watch Sales Grow']" :key="step" class="flex flex-col items-center">
-            <div class="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-600 text-xl font-bold text-white shadow-lg">
-              {{ i + 1 }}
-            </div>
-            <h3 class="mt-4 text-lg font-semibold text-gray-900">{{ step }}</h3>
-            <p class="mt-2 text-sm text-gray-500">
-              {{ ['Define your target audience, keywords, and ad creatives.', 'Set daily or total spend limits — adjust anytime.', 'Track performance and optimize with real-time data.'][i] }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section id="pricing" class="bg-indigo-600 py-24 px-6 text-center">
-      <div class="mx-auto max-w-2xl">
-        <h2 class="text-3xl font-bold text-white md:text-4xl">Ready to Scale Your Business?</h2>
-        <p class="mt-4 text-indigo-200">Join thousands of sellers already growing with Ordent Sponsored Ads.</p>
-        <a
-          href="#"
-          class="mt-8 inline-block rounded-full bg-white px-10 py-4 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors shadow-lg"
-        >
-          Get Started for Free
-        </a>
-      </div>
-    </section>
   </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 py-10 px-6 text-center text-sm text-gray-500">
-    <p>© 2026 Ordent. All rights reserved.</p>
-  </footer>
 </template>
