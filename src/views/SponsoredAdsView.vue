@@ -5,7 +5,18 @@ import ContentModal from '@/components/ContentModal.vue';
 import Ads from "@/data/ads.json";
 import cover1 from '@/assets/images/cover_1.webp'
 
-const ads = Ads;
+const isPrime = (n: number): boolean => {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+};
+
+const ads = ref(Ads.filter((_, i) => {
+  const pos = i + 1;
+  return isPrime(pos) && pos >= 3;
+}));
 
 const isModalOpen = ref(false);
 const selectedAd = ref<{
@@ -45,7 +56,10 @@ const closeModal = () => {
             :link="`#${item.title}`"
             :likes="item.likes"
             :sponsored="true"
+            :bookmarked="item.bookmarked"
             @click="openModal(item, item.likes)"
+            @bookmark="item.bookmarked = !item.bookmarked"
+            @like="(isLiked: boolean) => item.likes += isLiked ? 1 : -1"
         />
     </div>
 

@@ -5,7 +5,8 @@ import ContentModal from '@/components/ContentModal.vue';
 import Articles from "@/data/articles.json";
 import cover1 from '@/assets/images/cover_1.webp'
 
-const articles = Articles;
+
+const articles = ref(Articles);
 
 const isModalOpen = ref(false);
 const selectedArticle = ref<{
@@ -44,7 +45,10 @@ const closeModal = () => {
             :link="`#${item.title}`"
             :likes="item.likes"
             :sponsored="true"
+            :bookmarked="item.bookmarked"
             @click="openModal(item, item.likes)"
+            @bookmark="item.bookmarked = !item.bookmarked"
+            @like="(isLiked: boolean) => item.likes += isLiked ? 1 : -1"
         />
     </div>
 
