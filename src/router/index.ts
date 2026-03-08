@@ -6,6 +6,10 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      redirect: '/sponsored-ads',
+    },
+    {
+      path: '/home',
       name: 'landing',
       component: LandingView,
     },
