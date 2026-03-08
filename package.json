@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "curl -o src/data/articles.json \"https://gist.githubusercontent.com/shafhik/2066a4cc87807262d4823fb3bdb2e1d4/raw/d0c3c3612b40649b4869dd5d5adb39d819fd8db3/articles.json\" && curl -o src/data/ads.json \"https://gist.githubusercontent.com/shafhik/2066a4cc87807262d4823fb3bdb2e1d4/raw/d0c3c3612b40649b4869dd5d5adb39d819fd8db3/ads.json\" && vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "test:unit": "vitest",
@@ -17,6 +17,8 @@
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
+    "@fontsource/dm-sans": "^5.2.8",
+    "@heroicons/vue": "^2.2.0",
     "pinia": "^3.0.4",
     "vue": "^3.5.29",
     "vue-router": "^5.0.3"
@@ -52,5 +54,10 @@
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
+  },
+  "dependenciesMeta": {
+    "@heroicons/vue@2.2.0": {
+      "unplugged": true
+    }
   }
 }
