@@ -43,9 +43,9 @@ const closeModal = () => {
             :cover="cover1"
             :summary="item.summary"
             :link="`#${item.title}`"
-            :likes="Math.floor(Math.random() * 100)"
+            :likes="item.likes"
             :sponsored="true"
-            @click="openModal(item, Math.floor(Math.random() * 100))"
+            @click="openModal(item, item.likes)"
         />
     </div>
 
