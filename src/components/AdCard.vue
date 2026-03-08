@@ -1,23 +1,50 @@
 <script setup lang="ts">
+/**
+ * AdCard
+ *
+ * Displays a single ad or article as a card with a cover image, title, summary,
+ * and interactive action buttons (like, bookmark, share).
+ *
+ * Emits:
+ * - `click`    — fired when the card body (image / text area) is clicked,
+ *                typically used to open a detail modal.
+ * - `bookmark` — fired when the bookmark button is toggled.
+ * - `like`     — fired when the like button is toggled; payload is a boolean
+ *                indicating the new liked state.
+ */
 import { ShareIcon, BookmarkIcon, HeartIcon } from '@heroicons/vue/24/outline';
 
 import { BookmarkIcon as BookmarkIconFilled, HeartIcon as HeartIconFilled } from "@heroicons/vue/24/solid";
 import { ref } from 'vue';
 
 defineProps<{
+    /** Unique identifier for the ad / article. */
     id: number;
+    /** Heading text displayed on the card. */
     title: string;
+    /** URL of the cover image shown at the top of the card. */
     cover: string;
+    /** Short description displayed below the title (clamped to 5 lines). */
     summary: string;
+    /** External URL the ad or article links to. */
     link: string;
+    /** Current like count shown next to the heart icon. */
     likes: number;
+    /** When `true`, a "Sponsored" badge is rendered on the card. */
     sponsored: boolean;
+    /** Reflects whether the card has been bookmarked by the current user. */
     bookmarked: boolean;
 }>()
 
 const emit = defineEmits<{
+  /** Emitted when the card's main content area is clicked. */
   click: [];
+  /** Emitted when the bookmark button is clicked. */
   bookmark: [];
+  /**
+   * Emitted when the like button is toggled.
+   * @param liked - `true` if the user just liked the item, `false` if unliked.
+   */
   like: [liked: boolean];
 }>();
 

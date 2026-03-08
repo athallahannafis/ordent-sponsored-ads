@@ -1,3 +1,12 @@
+<!--
+  NavBar
+
+  Site-wide sticky navigation header. Renders the brand logo on the left,
+  primary navigation links (Articles, Sponsored Ads) in the centre for
+  medium-and-above viewports, and a "Get Started" CTA button on the right.
+
+  No props or emits — navigation is handled via plain anchor hrefs.
+-->
 <template>
   <header class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-100">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">

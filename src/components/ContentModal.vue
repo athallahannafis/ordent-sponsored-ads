@@ -1,17 +1,35 @@
 <script setup lang="ts">
+/**
+ * ContentModal
+ *
+ * A full-screen overlay modal that renders the complete content of an ad or
+ * article. Uses Headless UI `<Dialog>` with animated transitions for smooth
+ * open / close behaviour.
+ *
+ * Emits:
+ * - `close` — fired when the backdrop or the × button is clicked, signalling
+ *             the parent to set `isOpen` to `false`.
+ */
 import { TransitionRoot, TransitionChild, Dialog, DialogPanel, DialogTitle } from '@headlessui/vue';
 import { XMarkIcon, HeartIcon, BookmarkIcon, ShareIcon } from '@heroicons/vue/24/outline';
 
 defineProps<{
+  /** Controls whether the modal is visible. */
   isOpen: boolean;
+  /** Title rendered inside the modal as the dialog heading. */
   title: string;
+  /** URL of the hero image displayed at the top of the modal. */
   cover: string;
+  /** Full body text of the article or ad, rendered with `whitespace-pre-wrap`. */
   content: string;
+  /** Like count displayed next to the heart icon in the modal footer. */
   likes: number;
+  /** When `true`, a "Sponsored" badge is overlaid on the cover image. */
   sponsored?: boolean;
 }>();
 
 const emit = defineEmits<{
+  /** Emitted when the user requests the modal to close (backdrop click or × button). */
   close: [];
 }>();
 </script>
