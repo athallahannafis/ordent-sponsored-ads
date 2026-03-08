@@ -68,17 +68,21 @@ const liked = ref(false);
           <span class="text-xs font-bold text-ordent-blue">Sponsored</span>
         </template>
         <div class="w-full flex flex-row-reverse items-center gap-3">
-          <!-- share -->
+          <!-- share (no emits yet) -->
           <button class="text-black hover:text-ordent-blue transition-colors">
             <ShareIcon class="w-5 h-5" />
           </button>
           <!-- bookmark -->
-          <button @click.stop="emit('bookmark')" class="text-black hover:text-ordent-blue transition-colors">
+          <button
+          id="bookmark-button"
+          @click.stop="emit('bookmark')" class="text-black hover:text-ordent-blue transition-colors">
               <BookmarkIconFilled v-if="bookmarked" class="w-5 h-5" />
               <BookmarkIcon v-else class="w-5 h-5" />
           </button>
           <!-- like -->
-          <button @click.stop="() => { 
+          <button
+          id="like-button"
+          @click.stop="() => { 
             liked = !liked; 
             emit('like', liked); 
           }" class="text-black flex flex-row gap-2 items-center hover:text-red-600 transition-colors" :class="{ 'text-red-600': liked }">
