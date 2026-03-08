@@ -744,6 +744,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@headlessui/vue@npm:^1.7.23":
+  version: 1.7.23
+  resolution: "@headlessui/vue@npm:1.7.23"
+  dependencies:
+    "@tanstack/vue-virtual": "npm:^3.0.0-beta.60"
+  peerDependencies:
+    vue: ^3.2.0
+  checksum: 10c0/6c570ab66ff7b0c2f115ab062dd8a08ce769263f5236422ecb298bfcb3d19d15fc83272d009f3c4159b8da3777ad048bf0ef49e258368096ae3b71085417fe13
+  languageName: node
+  linkType: hard
+
 "@heroicons/vue@npm:^2.2.0":
   version: 2.2.0
   resolution: "@heroicons/vue@npm:2.2.0"
@@ -1433,6 +1444,24 @@ __metadata:
   peerDependencies:
     vite: ^5.2.0 || ^6 || ^7
   checksum: 10c0/44ee3bddffec12f3433b9d589e643f8a75edc78171766bc968ce5e95b4228c76b44e80cf9ddd5edb4edc11df658790099a98e23f976f9a38d812ddbeb443b3f9
+  languageName: node
+  linkType: hard
+
+"@tanstack/virtual-core@npm:3.13.21":
+  version: 3.13.21
+  resolution: "@tanstack/virtual-core@npm:3.13.21"
+  checksum: 10c0/e420e3d3d7d494deab873fd1d4114a5a5aa65ca475f0a8149c84bdd52572c695a142449c6de033fbb369eac68e2d4b0c25c090c97f9cceaad3b51a7f22f3e2a7
+  languageName: node
+  linkType: hard
+
+"@tanstack/vue-virtual@npm:^3.0.0-beta.60":
+  version: 3.13.21
+  resolution: "@tanstack/vue-virtual@npm:3.13.21"
+  dependencies:
+    "@tanstack/virtual-core": "npm:3.13.21"
+  peerDependencies:
+    vue: ^2.7.0 || ^3.0.0
+  checksum: 10c0/11570341c1c76987dc0ab37dd6203ce2802d5aa2a57ede80eb414ad5c42d50c58cc033328d2201d75b633dcc2c0b2aac27145dbc3bb91375f7fa2a86cea69500
   languageName: node
   linkType: hard
 
@@ -4086,6 +4115,7 @@ __metadata:
   resolution: "ordent-sponsored-ads@workspace:."
   dependencies:
     "@fontsource/dm-sans": "npm:^5.2.8"
+    "@headlessui/vue": "npm:^1.7.23"
     "@heroicons/vue": "npm:^2.2.0"
     "@playwright/test": "npm:^1.58.2"
     "@tailwindcss/vite": "npm:^4.2.1"
