@@ -19,4 +19,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  optimizeDeps: {
+    include: ['@heroicons/vue/24/outline', '@heroicons/vue/24/solid', '@heroicons/vue/20/solid'],
+  },
 })

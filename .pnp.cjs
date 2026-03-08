@@ -28,6 +28,8 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@fontsource/dm-sans", "npm:5.2.8"],\
+          ["@heroicons/vue", "virtual:f045ced32d9cc96f6c4b062b1ab97195931c295efc176b30fefdbfceb0bd3153efbce224e46ea8c3f01f1b78adf8d8134bd9f39cb9e2c900d56075ab9c6a2f32#npm:2.2.0"],\
           ["@playwright/test", "npm:1.58.2"],\
           ["@tailwindcss/vite", "virtual:f045ced32d9cc96f6c4b062b1ab97195931c295efc176b30fefdbfceb0bd3153efbce224e46ea8c3f01f1b78adf8d8134bd9f39cb9e2c900d56075ab9c6a2f32#npm:4.2.1"],\
           ["@tsconfig/node24", "npm:24.0.4"],\
@@ -1070,12 +1072,43 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@fontsource/dm-sans", [\
+      ["npm:5.2.8", {\
+        "packageLocation": "../../../../.yarn/berry/cache/@fontsource-dm-sans-npm-5.2.8-cbb821555e-10c0.zip/node_modules/@fontsource/dm-sans/",\
+        "packageDependencies": [\
+          ["@fontsource/dm-sans", "npm:5.2.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@gar/promise-retry", [\
       ["npm:1.0.2", {\
         "packageLocation": "../../../../.yarn/berry/cache/@gar-promise-retry-npm-1.0.2-960b209ddf-10c0.zip/node_modules/@gar/promise-retry/",\
         "packageDependencies": [\
           ["@gar/promise-retry", "npm:1.0.2"],\
           ["retry", "npm:0.13.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@heroicons/vue", [\
+      ["npm:2.2.0", {\
+        "packageLocation": "./.yarn/unplugged/@heroicons-vue-virtual-47d365d36d/node_modules/@heroicons/vue/",\
+        "packageDependencies": [\
+          ["@heroicons/vue", "npm:2.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:f045ced32d9cc96f6c4b062b1ab97195931c295efc176b30fefdbfceb0bd3153efbce224e46ea8c3f01f1b78adf8d8134bd9f39cb9e2c900d56075ab9c6a2f32#npm:2.2.0", {\
+        "packageLocation": "./.yarn/unplugged/@heroicons-vue-virtual-47d365d36d/node_modules/@heroicons/vue/",\
+        "packageDependencies": [\
+          ["@heroicons/vue", "virtual:f045ced32d9cc96f6c4b062b1ab97195931c295efc176b30fefdbfceb0bd3153efbce224e46ea8c3f01f1b78adf8d8134bd9f39cb9e2c900d56075ab9c6a2f32#npm:2.2.0"],\
+          ["@types/vue", null],\
+          ["vue", "virtual:f045ced32d9cc96f6c4b062b1ab97195931c295efc176b30fefdbfceb0bd3153efbce224e46ea8c3f01f1b78adf8d8134bd9f39cb9e2c900d56075ab9c6a2f32#npm:3.5.29"]\
+        ],\
+        "packagePeers": [\
+          "@types/vue",\
+          "vue"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5052,6 +5085,8 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@fontsource/dm-sans", "npm:5.2.8"],\
+          ["@heroicons/vue", "virtual:f045ced32d9cc96f6c4b062b1ab97195931c295efc176b30fefdbfceb0bd3153efbce224e46ea8c3f01f1b78adf8d8134bd9f39cb9e2c900d56075ab9c6a2f32#npm:2.2.0"],\
           ["@playwright/test", "npm:1.58.2"],\
           ["@tailwindcss/vite", "virtual:f045ced32d9cc96f6c4b062b1ab97195931c295efc176b30fefdbfceb0bd3153efbce224e46ea8c3f01f1b78adf8d8134bd9f39cb9e2c900d56075ab9c6a2f32#npm:4.2.1"],\
           ["@tsconfig/node24", "npm:24.0.4"],\

@@ -728,12 +728,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/dm-sans@npm:^5.2.8":
+  version: 5.2.8
+  resolution: "@fontsource/dm-sans@npm:5.2.8"
+  checksum: 10c0/34451e30b1fe29a075946b8d42d8867883e3f0ac3cb1d5d29493a311006c67d1b766369c32f39820b86a0bacf8fbd3cc2c02e55744809b8ece67141dfadcac5e
+  languageName: node
+  linkType: hard
+
 "@gar/promise-retry@npm:^1.0.0":
   version: 1.0.2
   resolution: "@gar/promise-retry@npm:1.0.2"
   dependencies:
     retry: "npm:^0.13.1"
   checksum: 10c0/748a84fb0ab962f7867966f21dc24d1872c53c1656dd3352320fe69ad3b2043f2dfdb3be024c7636ce4904c5ba1da22d0f3558e489c3de578f5bb520f062d0fd
+  languageName: node
+  linkType: hard
+
+"@heroicons/vue@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@heroicons/vue@npm:2.2.0"
+  peerDependencies:
+    vue: ">= 3"
+  checksum: 10c0/8872f89cd033ce21363b5457adb7ea6cb9631cfbe85006b4131f9078c75c1c9701fd6d9d727d49c739b8716f4a46ccdd2ffae8c6635fc2528efaf0982759edb3
   languageName: node
   linkType: hard
 
@@ -4069,6 +4085,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ordent-sponsored-ads@workspace:."
   dependencies:
+    "@fontsource/dm-sans": "npm:^5.2.8"
+    "@heroicons/vue": "npm:^2.2.0"
     "@playwright/test": "npm:^1.58.2"
     "@tailwindcss/vite": "npm:^4.2.1"
     "@tsconfig/node24": "npm:^24.0.4"
@@ -4099,6 +4117,9 @@ __metadata:
     vue: "npm:^3.5.29"
     vue-router: "npm:^5.0.3"
     vue-tsc: "npm:^3.2.5"
+  dependenciesMeta:
+    "@heroicons/vue@2.2.0":
+      unplugged: true
   languageName: unknown
   linkType: soft
 

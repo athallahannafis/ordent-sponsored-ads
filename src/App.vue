@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
+import NavBar from './components/NavBar.vue';
 </script>
 
 <template>
-  <RouterView />
+  <NavBar/>
+  <main class="py-16">
+    <RouterView />
+  </main>
 </template>
+

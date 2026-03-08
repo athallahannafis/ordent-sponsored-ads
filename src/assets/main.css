@@ -1,6 +1,9 @@
 @import "tailwindcss";
+@import "@fontsource/dm-sans";
 
 @theme {
+  --font-sans: "DM Sans", sans-serif;
+
   --color-primary: #6366f1;
   --color-primary-light: #818cf8;
   --color-primary-dark: #4f46e5;

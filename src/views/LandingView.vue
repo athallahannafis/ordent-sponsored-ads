@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import NavBar from '@/components/NavBar.vue'
-import { onMounted } from 'vue';
 
 const features = [
   {
@@ -25,16 +24,9 @@ const features = [
   },
 ];
 
-onMounted(async () => {
-  const res = await fetch('https://gist.githubusercontent.com/shafhik/2066a4cc87807262d4823fb3bdb2e1d4/raw/d0c3c3612b40649b4869dd5d5adb39d819fd8db3/ads.json');
-  console.log(res);
-});
 </script>
 
 <template>
-  <!-- Navbar -->
-  <NavBar />
-
   <main>
     <!-- Hero -->
     <section class="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-purple-50 px-6 pt-24 text-center">
