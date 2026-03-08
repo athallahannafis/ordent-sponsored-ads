@@ -9,11 +9,16 @@ const router = createRouter({
       name: 'landing',
       component: LandingView,
     },
-     {
+    {
       path: '/sponsored-ads',
       name: 'sponsored-ads',
-      component: () => import('@/views/SponsoredAds.vue'),
+      component: () => import('@/views/SponsoredAdsView.vue'),
     },
+    {
+      path: '/articles',
+      name: 'articles',
+      component: () => import('@/views/ArticlesView.vue'),
+    }
   ],
 })
 
