@@ -14,6 +14,7 @@ yarn
 ### Compile and Hot-Reload for Development
 
 ```sh
+yarn install
 yarn dev
 ```
 
