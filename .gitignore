@@ -40,3 +40,8 @@ __screenshots__/
 
 test-results/
 playwright-report/
+
+
+# dummy data
+src/data/ads.json
+src/data/articles.json
